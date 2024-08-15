@@ -14,10 +14,12 @@ This project was created using the Jetson Nano. The model is essentially a retra
 ## Running this project
 
 1. Ensure that both the Jetson Inference library and Python3 are installed on your Jetson Nano.
-2. After that, download model_best.pth.tar and resnet18.onnx: (https://drive.google.com/file/d/1t8FY9F9BrWKe0JKP6-7QUr6bEoDbvZpB/view?usp=sharing) (https://drive.google.com/file/d/13xnW1Gkq7pUpCK92jZrR4AZBrP3QK1QQ/view?usp=sharing)
+2. After that, download model_best.pth.tar and resnet18.onnx:
+   (https://drive.google.com/file/d/1t8FY9F9BrWKe0JKP6-7QUr6bEoDbvZpB/view?usp=sharing)
+   (https://drive.google.com/file/d/13xnW1Gkq7pUpCK92jZrR4AZBrP3QK1QQ/view?usp=sharing)
 4. Download the dataset (images) here: (https://drive.google.com/file/d/1ZEcS-4nsMC7i7aqNkHZ_60X0bd9D3qAz/view?usp=sharing)
 5. Go to the terminal and move to the classification directory:
-   '''$ cd jetson-inference/python/training/classification'''
+   ```$ cd jetson-inference/python/training/classification```
 6. Set the net and data variables as shown below:
    $ NET=models/diseased_leaf
    $ DATASET=data/diseased_leaf
