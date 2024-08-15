@@ -21,8 +21,8 @@ This project was created using the Jetson Nano. The model is essentially a retra
 2. Make sure to include any required libraries that need to be installed for your project to run.
 
 1. Ensure that both the Jetson Inference library and Python3 are installed on your Jetson Nano.
-2. After that, download the model_best.pth.tar and resnet18.onnx. Links to the models: (GOOGLE DRIVE LINK)
-3. Download the dataset (images) here: (GOOGLE DRIVE LINK)
+2. After that, download model_best.pth.tar
+3. Download the dataset (images) here: (https://drive.google.com/file/d/1ZEcS-4nsMC7i7aqNkHZ_60X0bd9D3qAz/view?usp=sharing)
 4. Go to the terminal and move to the classification directory:
    $ cd jetson-inference/python/training/classification
 5. Set the net and data variables as shown below:
