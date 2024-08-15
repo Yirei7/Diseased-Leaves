@@ -1,6 +1,6 @@
 # Project Name
 
- This project allows the user to identify how much a leaf is diseased. It is be useful for avoiding inedible leaf vegetables.
+ This project allows the user to identify how much a leaf is diseased. It is useful for avoiding inedible leaf vegetables.
 
 ![image](https://github.com/user-attachments/assets/479e4d28-492d-48f6-b1db-ea7ea09b9222)
 
@@ -26,15 +26,16 @@ This project was created using the Jetson Nano. The model is essentially a retra
    
 9. Set the net and data variables as shown below:
     ```
-   $ NET=models/diseased_leaf
+   NET=models/diseased_leaf
     ```
     ```
-   $ DATASET=data/diseased_leaf
+   DATASET=data/diseased_leaf
     ```
    
 11. Type command to process an image:
-    ```
-   $ imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/blight/Late_Blight_1.jpg blight1.jpg
+    
+   ```
+   imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/blight/Late_Blight_1.jpg blight1.jpg
    ```
 
 13. Instead, if you want to use your own unhealthy/blight or healthy leaf image, place it in one of the subdirectories within the test directory. Then, use the command above, modifying "blight/Late_Blight_1.jpg" to match the folder and filename of your image.
