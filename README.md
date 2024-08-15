@@ -1,4 +1,4 @@
-# Project Name
+# Diseased Leaves
 
  This project allows the user to identify how much a leaf is diseased. It is useful for avoiding inedible leaf vegetables.
 
