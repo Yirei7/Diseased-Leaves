@@ -15,16 +15,16 @@ This project was created using the Jetson Nano. The model is essentially a retra
 
 1. Ensure that both the Jetson Inference library and Python3 are installed on your Jetson Nano.
    
-3. After that, download the model_best.pth.tar: (https://drive.google.com/file/d/1t8FY9F9BrWKe0JKP6-7QUr6bEoDbvZpB/view?usp=sharing) and resnet18.onnx: (https://drive.google.com/file/d/13xnW1Gkq7pUpCK92jZrR4AZBrP3QK1QQ/view?usp=sharing)
+2. After that, ensure that you have downloaded all files from this repository.
    
-5. Download the dataset (images) here: (https://drive.google.com/file/d/1ZEcS-4nsMC7i7aqNkHZ_60X0bd9D3qAz/view?usp=sharing)
+3. Here are dataset (images) here for reference: (https://drive.google.com/file/d/1ZEcS-4nsMC7i7aqNkHZ_60X0bd9D3qAz/view?usp=sharing)
    
-7. Go to the terminal and move to the classification directory:
+4. Go to the terminal and move to the classification directory:
    ```
    cd jetson-inference/python/training/classification
    ```
    
-9. Set the net and data variables as shown below:
+5. Set the net and data variables as shown below:
     ```
    NET=models/diseased_leaf
     ```
@@ -32,14 +32,14 @@ This project was created using the Jetson Nano. The model is essentially a retra
    DATASET=data/diseased_leaf
     ```
    
-11. Type command to process an image:
+6. Type command to process an image:
     
    ```
    imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/blight/Late_Blight_1.jpg blight1.jpg
    ```
 
-13. Instead, if you want to use your own unhealthy/blight or healthy leaf image, place it in one of the subdirectories within the test directory. Then, use the command above, modifying "blight/Late_Blight_1.jpg" to match the folder and filename of your image.
+7. Instead, if you want to use your own unhealthy/blight or healthy leaf image, place it in one of the subdirectories within the test directory. Then, use the command above, modifying "blight/Late_Blight_1.jpg" to match the folder and filename of your image.
     
-15. Lastly, check the output image to see if the classification is "blight" or "healthy."
+8. Lastly, check the output image to see if the classification is "blight" or "healthy."
     
 View a video explanation here: https://youtu.be/tkCVzYpyIuY
