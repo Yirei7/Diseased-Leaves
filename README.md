@@ -17,7 +17,7 @@ This project was created using the Jetson Nano. The model is essentially a retra
    
 2. After that, ensure that you have downloaded all files from this repository.
    
-3. Here are dataset (images) here for reference: (https://drive.google.com/file/d/1ZEcS-4nsMC7i7aqNkHZ_60X0bd9D3qAz/view?usp=sharing)
+3. Here are dataset (images) here for reference: (https://drive.google.com/file/d/1ZEcS-4nsMC7i7aqNkHZ_60X0bd9D3qAz/view?usp=sharing). Replace images in here with your own.
    
 4. Go to the terminal and move to the classification directory:
    ```
